@@ -72,7 +72,7 @@ body {
 
 .youtube {
   position: relative;
-  width: 100%;
+  width: calc(90% - 10px);
   padding-bottom: 50%;
 }
 .youtube iframe {
@@ -89,6 +89,18 @@ body {
   max-width: 242px;
   max-height: 242px;
 }
+@media screen and (max-width: 768px) {
+  .hero__img {
+    max-width: 200px;
+    min-height: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero__img {
+    max-width: 160px;
+    min-height: 160px;
+  }
+}
 .hero__img::after {
   display: block;
   z-index: 1000;
@@ -96,18 +108,52 @@ body {
 }
 .hero__goal {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
   width: 72px;
   height: 72px;
 }
+@media screen and (max-width: 768px) {
+  .hero__goal {
+    max-width: 60px;
+    min-height: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero__goal {
+    max-width: 50px;
+    min-height: 50px;
+  }
+}
 .hero__title {
   font-size: 48px;
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero__title {
+    font-size: 24px;
+  }
 }
 .hero__descr {
   font-size: 30px;
   font-weight: 200;
   line-height: 32px;
+}
+@media screen and (max-width: 768px) {
+  .hero__descr {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero__descr {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 .btns {
@@ -144,7 +190,25 @@ a {
 .btn--primary {
   background: #24a2eb;
 }
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0;
+    width: 170px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .btn {
+    font-size: 16px;
+    line-height: 20px;
+    width: 150px;
+    height: 50px;
+  }
+}
 
 .join {
-  padding-bottom: 40px;
+  padding: 20px;
+  padding-bottom: 60px;
 }
